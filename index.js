@@ -7,6 +7,9 @@ const app = express();
 const options = {
   target: 'https://openai.lingyu.org.cn', // 转发目标地址
   changeOrigin: true, // 是否改变请求头的内容
+  pathRewrite: {
+    '^/api': '', // 替换地址为空
+  },
 };
 
 // 创建代理中间件
