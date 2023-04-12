@@ -8,8 +8,11 @@
   ],
   "routes": [
     {
-        "src": "/(.*)",
-        "dest": "/"
+      "src": "/(.*)",
+      "dest": "/",
+      "options": {
+        "timeout": 400
+      }
     }
    ]
 }
