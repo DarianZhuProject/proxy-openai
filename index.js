@@ -10,6 +10,8 @@ const options = {
   pathRewrite: {
     '^/api': '', // 替换地址为空
   },
+  proxyTimeout:400000,
+  timeout:400000
 };
 
 // 创建代理中间件
